@@ -2,9 +2,13 @@ language: python
 python:
   - "3.6"
 # command to install dependencies
+addons:
+  apt:
+    packages:
+      - graphviz
 install:
   - pip install -U -r requirements.txt
-  - "sudo apt-get install graphviz"
+  - pip install .
 # command to run tests
 script:
    -pytest -vvv tests
