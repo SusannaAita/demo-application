@@ -11,5 +11,5 @@ install:
   - pip install .
 # command to run tests
 script:
-   -pytest -vvv tests
+   - pytest -vvv tests
   
